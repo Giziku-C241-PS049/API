@@ -14,14 +14,13 @@ def predict_image(image: Image.Image):
   if model is None:
     model = load_model()
     
-  image = np.asarray(image.resize((300, 300)))[..., :3]
+  image = np.asarray(image.resize((224, 224)))[..., :3]
   image = np.expand_dims(image, 0)
   image = image / 127.5 - 1.0
   
   class_probabilities = model.predict(image) 
 
   class_names = ['anggur', 'apel', 'ayam_betutu', 'ayam_goreng', 'ayam_pop', 'bakso', 'batagor', 'burger', 'cherry', 'cireng', 'coto_makassar', 'dendeng', 'gudeg', 'gulai_ikan', 'jeruk', 'kerak_telor', 'kiwi', 'mangga', 'mie_aceh', 'nasi_goreng', 'nasi_kuning', 'nasi_padang', 'nasi_pecel', 'pempek', 'pisang', 'rawon', 'rendang', 'sate', 'sawo', 'serabi', 'soto', 'strawberi', 'tahu_sumedang', 'telur_balado', 'telur_dadar']
-
 
   predicted_classes_index = np.argmax(class_probabilities)
   predicted = class_names[predicted_classes_index]
