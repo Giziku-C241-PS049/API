@@ -85,4 +85,4 @@ def get_rekomendasi(data: InputData):
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
-    uvicorn.run(app, debug=True)
+    uvicorn.run(app)
