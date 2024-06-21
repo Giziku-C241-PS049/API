@@ -1,4 +1,6 @@
-# Giziku Overview
+# Giziku-C241-PS049
+
+# Overview
 Giziku is an android Application that was created because there was a concerning fact about some malnutrition problem for some of the people in Indonesia. The giziku team would like to educate the people of Indonesia about how impactful nutrition is in our daily life. Also we would like to help people who are curious about what nutrition their food has so that they can know if it is a healthy food or not. Giziku itself is an android based application that has three main features. The first one is a nutrition classification based on the user image, a recommendation system  for those who want to eat healthy food Also we would like to inform users on what food that are healthy based on desire input. The second one is a feature that could classify common Indonesian foods nutrition.  Lastly,  we would like to build an app that is hopefully easy to use and easy to read UI.
 
 # Team Member
@@ -11,7 +13,7 @@ Giziku is an android Application that was created because there was a concerning
 6. (MD) A009D4KY3837 – Nicolas Kevin – University of Gunadarma - [Active]
 
 # Machine Learning
-Building a machine learning models with the help of tensorflow and python for a food classification with tensorflow and food recommendation system with basic machine learning also converting the model so that Cloud Computing team and Mobile team could deploy the model.
+Building a machine learning models with the help of tensorflow, python, mobilenet pretrain and adam optimizer for a food classification  and food recommendation system with basic machine learning also converting the model so that Cloud Computing team and Mobile team could deploy the model.
 
 # Mobile Development
 Designing a UI/UX with figma, implementing the UI/UX design into the apps, building the feature for the giziku apps and implementing tflite model for the mobile apps.
